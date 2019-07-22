@@ -7,15 +7,9 @@ import com.kbaez.repository.IPerson;
 import com.kbaez.service.IPersonService;
 
 @Service
-public class PersonService implements IPersonService{
+public class PersonService {
 	//trae una instancia definida o definicion de bean
 	@Autowired
 	private IPerson repository;
-
-	@Override
-	public void addPerson(String name) {
-		// TODO Auto-generated method stub
-		repository.add(name);
-	}
 
 }

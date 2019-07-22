@@ -1,6 +1,11 @@
 package com.kbaez.repository;
 
-public interface IPerson {
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
-	void add(String name);
+import com.kbaez.model.Person;
+
+@Repository
+public interface IPerson extends JpaRepository<Person, Integer>{
+	
 }
